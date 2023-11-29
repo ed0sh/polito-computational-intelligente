@@ -1,5 +1,6 @@
 venv/
 lab0/
+*/__pycache__
 .idea/
 .DS_Store
 */*.py
