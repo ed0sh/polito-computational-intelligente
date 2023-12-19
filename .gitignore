@@ -1,8 +1,12 @@
 venv/
-lab0/
 */__pycache__
 .idea/
-.DS_Store
+
+lab0/
+*/models/
+
 */*.py
 */*.xls*
+
 Report.docx
+.DS_Store
