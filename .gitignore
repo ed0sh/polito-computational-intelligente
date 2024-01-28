@@ -6,7 +6,10 @@ lab0/
 */models/
 
 */*.py
+*/*.pdf
 */*.xls*
 
-Report.docx
+Report.*
 .DS_Store
+
+!quixo/*.py
