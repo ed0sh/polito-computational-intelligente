@@ -31,13 +31,13 @@ def play_game(tmp : tuple) -> int :
 if __name__ == '__main__':
     
     #player_with_RL = SpeedUpSymmetryAgent(agents_number=8, trainig_period=25).training()
-    
+    player_with_RL = utils.load_model('models/agent-mixed_addedmirror_8_agents_10000_for_agent.pkl')
     min_max_player = SymmetryMinMaxPlayer()
 
 
     count = 0
     games_x_10 = 10
-    player_to_process = [(RandomPlayer(),min_max_player)]*games_x_10
+    player_to_process = [(RandomPlayer(),player_with_RL)]*games_x_10
     with mp.Pool() as pool:
         results = pool.map(play_game,player_to_process)
     

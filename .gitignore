@@ -13,3 +13,4 @@ Report.*
 .DS_Store
 
 !quixo/*.py
+!quixo/models/
